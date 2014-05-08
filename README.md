@@ -28,4 +28,4 @@ Despues imprimimos el contenido de la variable $script en el head del html.
 echo $script;
 ```
 
-un ejemplo funcional en el siguiente link: 
+un ejemplo funcional en el siguiente link: http://test2.spock.cl/Oscar/Lib_Graficos/
