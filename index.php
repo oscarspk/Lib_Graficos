@@ -13,17 +13,18 @@ $data2=array(
 			);
 
 $charts=new ChartsDesign();
+$script=$charts->ini("addGraficos");
+$script.=$charts->addPieChar("grafico",$data,5,$colors, "Plataformas");
+$script.=$charts->addPieChar("grafico2",$data2,5,$colors, "Ingresos");
+$script.=$charts->end();
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Documento sin título</title>
+<title>Graficos</title>
 <?
-echo $charts->ini("addGraficos");
-echo $charts->addPieChar("grafico",$data,5,$colors, "Plataformas");
-echo $charts->addPieChar("grafico2",$data2,5,$colors, "Ingresos");
-echo $charts->end();
+echo $script;
 ?>
 </head>
 
